@@ -67,7 +67,7 @@ def previous_year_date():
     # Close session
     session.close()
 
-    # From the recent date, get year, month and date seperately 
+    # From the recent date, get year, month and date separately 
     latest_date  = str(recent_date)
     r_year = int(latest_date[2:6])
     r_month = int(latest_date[7:9])
