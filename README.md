@@ -7,15 +7,16 @@ climate_starter.ipynb - Python and SQLAlchemy are used to do a basic climate ana
 		
 #### Precipitation Analysis:
 	
+ 	Shows the summary statistics for the precipitation data.
 	Displays a bar chart showing the precipitation data for the previous 12 months.
-	Shows the summary statistics for the precipitation data.
+	
 #### Station Analysis:
 
 	Shows the list of stations and observation count per station.
 	Calculates the lowest, highest, and average temperatures on the most-active station.
 	Displays a histogram of the observed temperatures on the most-active station for the previous 12 months.
 
-### Part 2: Design Your Climate App
+### Part 2: Design a Climate App
 
 app.py - This file has the Climate App. It is designed using Flask. There are 5 available routes and these routes are listed in the homepage.
 
@@ -31,16 +32,22 @@ app.py - This file has the Climate App. It is designed using Flask. There are 5 
 
 	Shows the dates and temperature observations of the most-active station for the previous year of data.
 	
-#### /api/v1.0/<startdate>	
+#### /api/v1.0/startdate	
 
 	Shows minimum, maximum and average temperature for all the dates greater than or equal to the start date.
+ 	E.g : /api/v1.0/2010-01-26
+ 
 	
-#### /api/v1.0/<startdate>/<enddate>
+#### /api/v1.0/startdate/enddate
 
 	Shows minimum, maximum and average temperature for the dates from the start date to the end date, inclusive.
+ 	E.g : /api/v1.0/2010-01-26/2015-03-24
 	
 Note:
- 
+
+Date format must be: yyyy-mm-dd 
+
 The Resources folder has the data files used in this challenge. 
+
 If Flask is not available in the environment, it can be installed using the command - pip install Flask
 
